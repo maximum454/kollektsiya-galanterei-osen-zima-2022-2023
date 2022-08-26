@@ -96,32 +96,32 @@ body.lock {
   text-align: center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.osen-zima-modal .swiper-button-next,
+.osen-zima-modal .swiper-button-prev {
   width: 36px;
   height: 70px;
 }
 
-.swiper-button-next {
+.osen-zima-modal .swiper-button-next {
   right: 50px;
 }
 
-.swiper-button-prev {
+.osen-zima-modal .swiper-button-prev {
   left: 50px;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.osen-zima-modal .swiper-button-next:after,
+.osen-zima-modal .swiper-button-prev:after {
   background-image: none;
   color: #0000;
   background-size: 100%;
 }
 
-.swiper-button-next:after {
+.osen-zima-modal .swiper-button-next:after {
   background-image: url("../img/arrow-next.svg");
 }
 
-.swiper-button-prev:after {
+.osen-zima-modal .swiper-button-prev:after {
   background-image: url("../img/arrow-prev.svg");
 }
 
@@ -556,6 +556,31 @@ body.lock {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .osen-zima-modal {
+    padding-bottom: 80px;
+  }
+
+  .osen-zima-modal .swiper-photo {
+    overflow: hidden;
+  }
+
+  .osen-zima-modal .swiper-button-prev,
+  .osen-zima-modal .swiper-button-next {
+    top: auto;
+    bottom: 20px;
+    margin-top: auto;
+    width: 23px;
+    height: 45px;
+  }
+
+  .osen-zima-modal .swiper-button-prev {
+    left: calc(50% - 50px);
+  }
+
+  .osen-zima-modal .swiper-button-next {
+    right: calc(50% - 50px);
   }
 
   .osen-zima-hero__body {
