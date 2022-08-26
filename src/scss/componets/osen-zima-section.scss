@@ -75,4 +75,53 @@
 		color: #FFFFFF;
 		transition: all .3s ease;
 	}
+	@include r(767){
+		&__item{
+			flex: 1 0 100%;
+			max-width: 100%;
+			height: 154px;
+			display: flex;
+			text-decoration: none;
+			position: relative;
+			border-top: 1px solid #000000;
+			&:last-child {
+				max-width: 100%;
+				.osen-zima-section__content{
+					position:absolute;
+				}
+				.osen-zima-section__name{
+					color: #ffffff;
+				}
+			}
+			&:nth-of-type(odd){
+				border-right: none;
+				.osen-zima-section__content{
+					padding-left: 20px;
+				}
+			}
+			&:nth-of-type(even){
+				flex-direction: row-reverse;
+
+			}
+		}
+		&__figure{
+			flex: 1 0 50%;
+			margin: 0;
+			width: 50%;
+		}
+		&__content{
+			position:relative;
+			flex: 1 0 50%;
+		}
+		&__name{
+			font-size: 22px;
+			line-height: 28px;
+			color: #000000;
+		}
+	}
+	@include r(359){
+		&__content{
+			padding: 10px;
+		}
+	}
 }

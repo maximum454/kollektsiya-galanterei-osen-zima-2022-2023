@@ -94,8 +94,11 @@ body.lock {
 
 .osen-zima-hero__body img {
   width: 100%;
+  height: 100%;
   display: block;
   margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .osen-zima-hero__content {
@@ -447,11 +450,109 @@ body.lock {
 }
 
 @media only screen and (max-width: 767px) {
+  .footer {
+    margin-top: 40px;
+  }
+
   .d-desktop-none {
     display: block;
   }
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .osen-zima-hero__body {
+    height: 264px;
+  }
+
+  .osen-zima-hero__content {
+    top: 20px;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    max-width: 184px;
+  }
+
+  .osen-zima-hero__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .osen-zima-hero__hr {
+    margin: 11px auto 10px;
+  }
+
+  .osen-zima-hero__date {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .osen-zima-section__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    height: 154px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    border-top: 1px solid #000000;
+  }
+
+  .osen-zima-section__item:last-child {
+    max-width: 100%;
+  }
+
+  .osen-zima-section__item:last-child .osen-zima-section__content {
+    position: absolute;
+  }
+
+  .osen-zima-section__item:last-child .osen-zima-section__name {
+    color: #ffffff;
+  }
+
+  .osen-zima-section__item:nth-of-type(odd) {
+    border-right: none;
+  }
+
+  .osen-zima-section__item:nth-of-type(odd) .osen-zima-section__content {
+    padding-left: 20px;
+  }
+
+  .osen-zima-section__item:nth-of-type(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .osen-zima-section__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    margin: 0;
+    width: 50%;
+  }
+
+  .osen-zima-section__content {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+
+  .osen-zima-section__name {
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .osen-zima-section__content {
+    padding: 10px;
   }
 }
