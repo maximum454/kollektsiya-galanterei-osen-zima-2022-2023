@@ -1,0 +1,95 @@
+.osen-zima-detail{
+	&__header{
+		text-align: center;
+		padding: 58px 0;
+		margin: 0 0 60px;
+		border-top: 2px solid #000000;
+		border-bottom: 2px solid #000000;
+	}
+	&__title{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+	}
+	&__body{
+		overflow: hidden;
+	}
+	&__item{
+		display: flex;
+	}
+	&__figure{
+		flex: 1 1 584px;
+		img{}
+	}
+	&__content{
+		flex: 1 0 470px;
+		max-width: 470px;
+	}
+	&__name{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		margin-bottom: 40px;
+	}
+	&__anons{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		p{
+			font-family: $font1;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 25px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+		}
+		b{
+			font-weight: 500;
+		}
+	}
+	&__slider{
+		overflow: hidden;
+		margin-bottom: 54px;
+	}
+	&__btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 312px;
+		width: 100%;
+		padding: 21px 10px;
+		border: 2px solid #000000;
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: lowercase;
+		text-decoration: none;
+		color: #000000;
+		transition: opacity .3s ease;
+		&:hover{
+			opacity: .5;
+			transition: opacity .3s ease;
+		}
+	}
+}

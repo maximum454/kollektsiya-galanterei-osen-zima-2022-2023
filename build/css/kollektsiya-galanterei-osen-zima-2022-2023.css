@@ -17,6 +17,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,7 +58,7 @@ body.lock {
 
 .wrp {
   position: relative;
-  font-family: Arial,sans-serif;
+  background-color: #F5F5F5;
 }
 
 .d-none {
@@ -228,6 +236,158 @@ body.lock {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.osen-zima-nav {
+  padding: 62px 0 58px;
+}
+
+.osen-zima-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.osen-zima-nav__link {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.osen-zima-detail__header {
+  text-align: center;
+  padding: 58px 0;
+  margin: 0 0 60px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.osen-zima-detail__title {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.osen-zima-detail__body {
+  overflow: hidden;
+}
+
+.osen-zima-detail__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.osen-zima-detail__figure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 584px;
+          flex: 1 1 584px;
+}
+
+.osen-zima-detail__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 470px;
+          flex: 1 0 470px;
+  max-width: 470px;
+}
+
+.osen-zima-detail__name {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.osen-zima-detail__anons {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.osen-zima-detail__anons p {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.osen-zima-detail__anons b {
+  font-weight: 500;
+}
+
+.osen-zima-detail__slider {
+  overflow: hidden;
+  margin-bottom: 54px;
+}
+
+.osen-zima-detail__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 312px;
+  width: 100%;
+  padding: 21px 10px;
+  border: 2px solid #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.osen-zima-detail__btn:hover {
+  opacity: .5;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 
 @media only screen and (max-width: 767px) {
