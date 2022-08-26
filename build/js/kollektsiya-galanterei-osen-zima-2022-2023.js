@@ -16,3 +16,12 @@ const swiperPhoto = new Swiper(".swiper-photo", {
         prevEl: '.swiper-button-prev',
     },
 });
+
+const burger = document.getElementById('burger');
+
+burger.addEventListener('click', function (){
+    let menu = document.getElementsByClassName('osen-zima-nav');
+    this.classList.toggle('open');
+    menu[0].classList.toggle('open')
+
+})

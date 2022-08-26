@@ -20,4 +20,29 @@
 		color: #000000;
 		text-decoration: none;
 	}
+	@include r(1023){
+		padding: 21px 0;
+		&__link{
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	@include r(767){
+		display: none;
+		position: absolute;
+		top: 111px;
+		left: 0;
+		z-index: 10;
+		background-color: #fff;
+		width: 100%;
+		&.open{
+			display: block;
+		}
+		&__list{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: block;
+		}
+	}
 }
