@@ -1,0 +1,73 @@
+@import "mixin";
+@import "fonts";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.main{
+	margin-top: -40px;
+	position: relative;
+	&.container{
+		max-width: 100%;
+		padding: 0;
+	}
+}
+.breadcrumb{
+	display: none;
+}
+.footer{
+	margin-top: 0;
+}
+
+.wrp {
+	position: relative;
+	font-family: Arial,sans-serif;
+}
+
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+
+@import "componets/osen-zima-hero";
+
+
+
+
