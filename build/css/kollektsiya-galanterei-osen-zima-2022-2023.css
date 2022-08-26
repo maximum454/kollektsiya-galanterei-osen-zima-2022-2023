@@ -269,6 +269,11 @@ body.lock {
   text-decoration: none;
 }
 
+.osen-zima-detail {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 66px;
+}
+
 .osen-zima-detail__header {
   text-align: center;
   padding: 58px 0;
@@ -290,6 +295,7 @@ body.lock {
 
 .osen-zima-detail__body {
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .osen-zima-detail__item {
@@ -349,9 +355,21 @@ body.lock {
   font-weight: 500;
 }
 
-.osen-zima-detail__slider {
+.osen-zima-detail__gallery {
   overflow: hidden;
   margin-bottom: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 22px;
+}
+
+.osen-zima-detail__gallery img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .osen-zima-detail__btn {
@@ -384,6 +402,44 @@ body.lock {
 }
 
 .osen-zima-detail__btn:hover {
+  opacity: .5;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.osen-zima-detail__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-bottom: 2px solid #000000;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.osen-zima-detail__more:hover {
   opacity: .5;
   -webkit-transition: opacity .3s ease;
   -o-transition: opacity .3s ease;
