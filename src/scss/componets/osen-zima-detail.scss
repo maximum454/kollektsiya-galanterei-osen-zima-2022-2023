@@ -1,6 +1,7 @@
 .osen-zima-detail{
 	border-bottom: 2px solid #000000;
 	padding-bottom: 66px;
+	margin-bottom: 83px;
 	&__header{
 		text-align: center;
 		padding: 58px 0;
@@ -21,13 +22,18 @@
 	&__body{
 		overflow: hidden;
 		margin-bottom: 50px;
+		position: relative;
 	}
 	&__item{
 		display: flex;
+		flex-wrap: wrap;
 	}
 	&__figure{
 		flex: 1 1 584px;
-		img{}
+		margin: 0;
+		.osen-zima-detail__name{
+			display: none;
+		}
 	}
 	&__content{
 		flex: 1 0 470px;
@@ -73,7 +79,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 22px;
+		a{
+			flex: 1 0 calc(33% - 22px);
+			max-width: calc(33% - 22px);
+		}
 		img{
+
 			display: block;
 			object-fit: cover;
 		}
@@ -124,6 +135,76 @@
 		&:hover{
 			opacity: .5;
 			transition: opacity .3s ease;
+		}
+	}
+	.swiper-button-prev {
+		left: 0;
+	}
+	.swiper-button-next {
+		right: 0;
+	}
+	@include r(1023){
+		&__figure{
+			flex: 1 0 35%;
+		}
+		&__content{
+			flex: 1 0 75%;
+			max-width: 55%;
+		}
+	}
+	@include r(767){
+		&__figure{
+			flex: 1 0 100%;
+			max-width: 100%;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.osen-zima-detail__name{
+				display: block;
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+		&__img{
+			flex: 1 0 50%;
+			max-width: 50%;
+		}
+		&__content{
+			flex: 1 0 100%;
+			max-width: 100%;
+			padding-bottom: 100px;
+		}
+		&__name{
+			display: none;
+		}
+		&__anons{
+			font-size: 10px;
+			line-height: 20px;
+			p{
+				font-size: 10px;
+				line-height: 20px;
+			}
+		}
+		&__more{
+			font-size: 20px;
+			line-height: 22px;
+		}
+		.add_to_cart_block{
+			text-align: center;
+		}
+		.swiper-button-prev,
+		.swiper-button-next{
+			top: auto;
+			bottom: 0;
+			margin-top: auto;
+			width: 23px;
+			height: 45px;
+		}
+		.swiper-button-prev {
+			left:  calc(50% - 50px);
+		}
+		.swiper-button-next {
+			right: calc(50% - 50px);
 		}
 	}
 }

@@ -38,8 +38,15 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="osen-zima-detail__item">
-                                    <figure class="osen-zima-detail__figure">
-                                        <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                    <figure class="osen-zima-detail__figure" data-remodal-target="modal-photo">
+                                        <div class="osen-zima-detail__img">
+                                            <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                        </div>
+                                        <h2 class="osen-zima-detail__name">GALANTE ШАПКА ВЗРОСЛАЯ
+                                            Размер 56-58
+                                            6 ЦВЕТОВ
+                                            ОЗ21-38
+                                        </h2>
                                     </figure>
                                     <div class="osen-zima-detail__content">
                                         <h2 class="osen-zima-detail__name">GALANTE ШАПКА ВЗРОСЛАЯ
@@ -84,8 +91,15 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="osen-zima-detail__item">
-                                    <figure class="osen-zima-detail__figure">
-                                        <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                    <figure class="osen-zima-detail__figure" data-remodal-target="modal-photo">
+                                        <div class="osen-zima-detail__img">
+                                            <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                        </div>
+                                        <h2 class="osen-zima-detail__name">GALANTE ШАПКА ВЗРОСЛАЯ
+                                            Размер 56-58
+                                            6 ЦВЕТОВ
+                                            ОЗ21-38
+                                        </h2>
                                     </figure>
                                     <div class="osen-zima-detail__content">
                                         <h2 class="osen-zima-detail__name">GALANTE ШАПКА ВЗРОСЛАЯ
@@ -131,20 +145,45 @@
                             </div>
 
                         </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="osen-zima-detail__footer">
                     <a href="#" class="osen-zima-detail__more">смотреть всё</a>
                 </div>
+
+                <div class="remodal osen-zima-modal" data-remodal-id="modal-photo">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <div class="remodal__body">
+                        <div class="swiper-photo">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./img/detail.png" width="584" height="584" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div>
+        <div style="text-align: center">
             <!--Тут блоки рекомендации или похожих дизайн такой же как и на сайте галацентре-->
+            <img class="img-fluid" src="./img/del.png" width="1144" height="418" alt="">
         </div>
     </main>
     @@include('./template/_footer.html',{ })
-    @@include('./template/_modal.html',{ })
 </div>
 
 <!-- JS -->

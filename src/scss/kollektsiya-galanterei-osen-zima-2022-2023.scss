@@ -8,25 +8,29 @@
 
 body {
 	background-color: #fff;
+
 	&.lock {
 		overflow: hidden;
 	}
 }
 
-.main{
+.main {
 	margin-top: -40px;
 	position: relative;
-	&.container{
+
+	&.container {
 		max-width: 100%;
 		padding: 0;
 	}
 }
-.breadcrumb{
+
+.breadcrumb {
 	display: none;
 }
-.footer{
+
+.footer {
 	margin-top: 153px;
-	@include r(767){
+	@include r(767) {
 		margin-top: 40px;
 	}
 }
@@ -68,6 +72,47 @@ body {
 	height: auto;
 }
 
+.osen-zima-modal {
+	overflow: hidden;
+	.swiper-slide{
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	.remodal {
+		max-width: 896px;
+	}
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+	width: 36px;
+	height: 70px;
+}
+
+.swiper-button-next {
+	right: 50px;
+}
+
+.swiper-button-prev {
+	left: 50px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+	background-image: none;
+	color: #0000;
+	background-size: 100%;
+}
+
+.swiper-button-next:after {
+	background-image: url("../img/arrow-next.svg");
+}
+
+.swiper-button-prev:after {
+	background-image: url("../img/arrow-prev.svg");
+}
 
 
 @import "componets/osen-zima-hero";
